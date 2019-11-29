@@ -13,31 +13,23 @@
         <input type="radio" name="status" value="完了" id="complete_radiobutton">完了
         
         <table>
-            <tr>
-                <th>ID</th>
-                <th>コメント</th>
-                <th>状態</th> 
-            </tr>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>コメント</th>
+                    <th>状態</th> 
+                </tr>
+            </thead>
             
-            <tr>
-                <td id="number"></td>
-                <td id="comment"></td>
-                <td id="status">
-                    <button id="statusbutton">作業中</button>
-                    <button id="deletebutton">削除</button>
-                </td>
-            </tr>
+            <tbody id="tbody"></tbody>   
             
-            <tr></tr>
+            
         </table>
-        
         
         <h2>新タスクの追加</h2>
         <input type="text" name="task" id="task" value="">
         <button id="addbutton">追加</button>
     </form>
-    
-    
     <script src="main.js"></script>
 </body>
 </html>
