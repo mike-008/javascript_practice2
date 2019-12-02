@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO リスト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TO DOリスト</h1>
+    <form method="POST" action="example.cgi" name="form">
+        <input type="radio" name="status" value="すべて" checked id="all_radiobutton">すべて
+        <input type="radio" name="status" value="作業中" id="working_radiobutton">作業中
+        <input type="radio" name="status" value="完了" id="complete_radiobutton">完了
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>コメント</th>
+                    <th>状態</th> 
+                </tr>
+            </thead>
+            
+            <tbody id="tbody"></tbody>   
+            
+            
+        </table>
+        
+        <h2>新タスクの追加</h2>
+        <input type="text" name="task" id="task" value="">
+        <button id="addbutton">追加</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
